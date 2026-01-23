@@ -2,7 +2,7 @@ alert("Hello World!");
 function summn(m,f){
     let sum=0;
     let i;
-    for(i=0,i<f.length,i++){
+    for(i=0;i<f.length;i++){
         if(m[i]%f[i]==0){
             sum+=m[i];
         }
