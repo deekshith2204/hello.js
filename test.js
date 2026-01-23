@@ -2,9 +2,13 @@ alert("Hello World!");
 function summn(m,f){
     let sum=0;
     let i;
-    for(i=0;i<f.length;i++){
-        if(m[i]%f[i]==0){
-            sum+=m[i];
+    for(i=0;i<m.length;i++){
+        for(j=0:j<f.length;j++){
+            if(m[i]%f[j]==0){
+                sum+=m[i];}
+
+        }
+        
         }
     }
     return sum
