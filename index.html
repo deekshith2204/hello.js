@@ -1,4 +1,43 @@
-<html><head></head><body>
-   Hello World 
-   <script src="/hello.js/test.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sum Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      width: 300px;
+      padding: 8px;
+      margin: 8px 0;
+    }
+    button {
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Sum of Multiples</h2>
+
+  <label>Enter factors (comma separated):</label><br>
+  <input type="text" id="factors" placeholder="e.g. 2,3"><br>
+
+  <label>Enter numbers (comma separated):</label><br>
+  <input type="text" id="multiples" placeholder="e.g. 4,5,6,7,8,9"><br>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
