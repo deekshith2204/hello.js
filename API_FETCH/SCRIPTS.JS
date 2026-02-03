@@ -1,11 +1,10 @@
-Fetch("https://en.wikipedia.org/api/rest_v1/page/summary/XML")
+fetch('https://jsonplaceholder.typicode.com/todos/1')
   .then(res => res.json())
   .then(data => {
-    document.getElementById("output").innerText = data.extract;
+      console.log(data);
+      document.getElementById("output").innerText = JSON.stringify(data)
   })
   .catch(err => {
     document.getElementById("output").innerText = "Error loading data";
     console.error(err);
   });
-
-console.log("Try programiz.pro");
